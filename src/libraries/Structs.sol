@@ -14,7 +14,9 @@ enum SignatureType {
     // 1: EIP712 signatures signed by EOAs that own Polymarket Proxy wallets
     POLY_PROXY,
     // 2: EIP712 signatures signed by EOAs that own Polymarket Gnosis safes
-    POLY_GNOSIS_SAFE
+    POLY_GNOSIS_SAFE,
+    // 3: EIP-1271 signatures from smart-contract wallets where signer == maker
+    POLY_1271
 }
 
 struct OrderStatus {
